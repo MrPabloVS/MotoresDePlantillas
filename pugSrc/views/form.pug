@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        a(href="/productos") Lista de productos 
+
+        form(action="/productos", method="POST") 
+            div
+                span Nombre: 
+                input(type="text", name="title")
+            div
+                span.input-group-text Precio: 
+                input(type="number", name="price")
+            div
+                span Imagen(URL): 
+                input(type="text",  name="img", id="url")
+            button(type="submit")  enviar
+            

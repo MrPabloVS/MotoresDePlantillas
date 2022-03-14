@@ -1,0 +1,13 @@
+<a href="/"> Cargar producto</a>
+
+<div>
+    <h1>Listado de Productos</h1>
+
+<% db.forEach(function(prod){ %>
+
+        <div>
+            <h4><%= prod.title %></h4>
+            <span>Price: <%= prod.price %></span>
+            <img src=<%= prod.thumbnail %>> >
+        </div>
+</div>
